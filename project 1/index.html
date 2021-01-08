@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project on form design</title>
+
+	<style type="text/css">
+		.Sec1 input {
+			background-color: AntiqueWhite; 
+			/*margin: 3px;*/
+			padding: 5px;
+			border: 1px solid grey;
+		}
+		input, select {
+			margin: 3px;
+		}
+		table {
+			margin: 5px 450px;
+			text-align: left;
+			
+		}
+		section {
+			border: 1px solid grey;
+			margin-bottom: 20px;
+					}
+		caption {	
+			text-align: left;
+			margin-top: -16px;
+			margin-left: -200px;
+			
+		}
+		caption span {
+			background: #fff; /*This makes the borderline transparent at the level of the text*/
+			padding-right: 70px; /*This gives the border line some space to the right*/
+			padding-left: 5px;
+		}
+
+		.Sec2 input,select {
+			margin-left: 3px;
+		}
+		.Sec4 input[type=button]{
+			padding: 4px 15px;
+		}
+		
+
+	</style>
+</head>
+<body>
+	
+	<header>First Project on form design</header> <br>
+		
+
+			<form id="f1" method="POST">
+<!-- The first section of the form -->
+				<section class="Sec1">
+					<table id="T1">
+						<caption><span>Data from the debtor</span></caption>
+						<tr>
+							<td>
+								<label for="numberOS" style="padding-right: 11px;">Number of O.S.</label>
+								<input type="text" name="numberOS">
+							</td>
+							<td>
+								<label for="CNPJ"> CNPJ</label>
+								<input type="Number" name="CNPJ" placeholder="18.433.638/0001-81">
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2">
+								<label for="Cname"> Corporate name *</label>
+								<input type="text" name="Cname" required style="width: 60%;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="opening" style="padding-right: 60px;"> Opening </label>
+								<input type="date" name="opening" value=" 23/01/2012 ">
+							</td>
+							<td>
+								<label for="status">Status</label>
+								<input type="" name="status" placeholder="Cadastro de Ordem de Servico" size="26" >
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="valueOS" style="padding-right: 2px;">Value of O.S(R$)</label>
+								<input type="Number" name="valueOS" placeholder="1,00">
+							</td>
+							<td>
+								<label for="amt"> Amount (R$)
+									</label>
+									<input type="Number" name="amt" placeholder="0,00">
+							</td>
+						</tr>
+					</table>
+				</section>
+<!-- Second section of the form -->
+				<section class="Sec2">
+					<table id="T2">
+						<caption><span>Data from the debtor</span></caption>
+						<tr>
+							<td>
+								<label for="persotype"  >Type persor *</label>
+								<input type="radio" name="persotype" value="physics" checked required>physics
+								<input type="radio" name="persotype" value="legal">legal
+							</td>
+							<td>
+								<label for="randnum"></label>
+								<input type="Number" name="randnum" placeholder="234.234.234-23">
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2">
+								<label for="name">Name *</label>
+								<input type="text" name="name"  placeholder="2342342342" required style="width: 60%; margin-left: 45px;" >
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="uf" style="padding-right: 60px;"> UF *</label>
+								<select name="uf" required>
+									<option name="sc" value="SC" autofocus>SC</option>
+									<option name="arts" value="ARTS">ARTS</option>	
+								</select>
+								
+								<label for="colade" style="margin-left: 30px;">Colade</label>
+								<select name="colade" required>
+									<option name="abdonB" value="Abdon Batista" autofocus>Abdon Batista</option>
+									<option name="barts" value="Barts Man">Barts Man</option>	
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="neigbs">Neighborhood</label>
+								<input type="text" name="neigbs">
+							</td>
+							<td>
+								<label for="cef"> CEF *
+									</label>
+									<input type="Number" name="cef" value="34234-243" required>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<label for="strt">Street</label>
+								<input type="text" name="strt" style="width: 60%;margin-left: 57px;">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<label for="complement">Complement</label>
+								<input type="text" name="complement"style="width: 60%;margin-left: 10px;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="numbers">Number</label>
+								<input type="text" name="numbers"
+								style="margin-left: 40px;">
+							</td>
+							<td>
+								<label for="phone">Phone
+									</label>
+									<input type="tel" name="phone" placeholder="( ) .">
+							</td>
+						</tr>
+					</table>
+				</section>
+
+				<section class="Sec3">
+					<table id="T3">
+						<caption><span style="color: blue;">Dados veicudo</span></caption>
+						<tr>
+							<td colspan="2">
+								<label for="category" style="padding-right: 59px;"> Category*</label>
+								<select name="category" required style="margin-left: 13px;">
+									<option name="particular" value="rticular">Particular</option>
+									<option name="special" value="special">Special</option>	
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<label for="species" style="padding-right: 60px;"> species*</label>
+								<select name="species" required style="margin-left: 24px;">
+									<option name="de passageriros" value="de passageriros">de passageriros</option>
+								</select>
+							</td>
+							<td>
+								<select name="biodata">
+									<option name="biodata" value="biodata">biodata   </option>
+									<option name="biodata" value="biodata">biodata</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="modelyear">Model year *</label>
+								<input type="text" name="modelyear" style="margin-left: 54px;" size=4px maxlength="4" required>
+							</td>
+							<td>
+								<label for="model" style="margin-left: 52px;">Model *</label>
+								<input type="text" name="model" required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="manuyear">Manufacturing year *</label>
+								<input type="text" name="manuyear" size=4px maxlength="4" required>
+							</td>
+							<td>
+								<label for="mark" style="margin-left: 52px;">Mark *</label>
+								<input type="text" name="mark"  style="margin-left: 8px;"required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" name="used" value="Used" style="margin-left: 143px;"><label for="used">Used</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="fuel">Fuel *</label>
+								<select name="fuel" style="margin-left: 99px" required>
+									<option name="gasolina" value="gasolina">Gasolina</option>
+									<option name="kerosene" value="kerosene">Kerosene</option>
+								</select>
+							</td>
+							<td>
+								<label for="rcolor" style="margin-left: 52px;">Color *</label>
+								<input type="text" name="rcolor" style="margin-left: 7px;" required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="cap/pot">Cap/Pot/Cil *</label>
+								<input type="Number" name="cap/pot" value="234" placeholder="234" style="margin-left: 52px">
+							</td>
+							<td>
+								<label for="frame" style="margin-left: 52px;">Frame *
+									</label>
+									<input type="Number" name="frame" value="24324"placeholder="24324" style="margin-left: 2px;">
+							</td>
+						</tr>
+					</table>
+				</section>
+
+				<section class="Sec4">
+					<table id="T4">
+						<caption><span style="color: blue;">Dados contrato</span></caption>
+						<tr>
+							<td>
+								<label for="contractnum"> contract number *</label>
+								<input name="contractnum" required style="margin-left: 63px;">
+							</td>
+							<td>
+								<label for="contracttype"> contract type *</label>
+								<select name="contracttype" required style="margin-left: 60px;">
+									<option name="Reserva de Dombo" value="Reserva de Dombo">Reserva de Dombo
+									</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<label for="signingdate"> signing date *</label>
+								<input type="date" name="signingdate" placeholder="23/01/2012" value="23/01/2012"style="margin-left: 88px;">
+							</td>
+							<td>
+								<label for="releasedate"> release date credit *</label>
+								<input type="date" name="releasedate" placeholder="23/01/2012" value="23/01/2012"style="margin-left: 30px;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="uf1"> UF *</label>
+								<select name="uf1" required style="margin-left: 147px;">
+									<option name="sc" value="SC">SC</option>
+									<option name="arts" value="ARTS">ARTS</option>	
+								</select>
+								</td>
+								<td>
+								<label for="city">City</label>
+								<select name="city" required style="margin-left: 128px;">
+									<option name="abdonB" value="Abdon Batista" autofocus>Abdon Batista</option>
+									<option name="barts" value="Barts Man">Barts Man</option>	
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="sharevalue">Share Value (R$)*</label>
+								<input type="Number" name="sharevalue" placeholder="234,00" value="234,00" required style="margin-left: 63px;">
+							</td>
+							<td>
+								<label for="valfunding"> Value funding (R$)</label>
+									<input type="Number" name="valfunding" placeholder="234,00" value="234,00" style="margin-left: 32px;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="firstinstalment"> Due 1st instalment *</label>
+								<input type="date" name="firstinstalment" placeholder="23/02/2012" value="23/02/2012"required style="margin-left: 50px;">
+							</td>
+							<td>
+								<label for="lastinstalment">  last instalment due *</label>
+								<input type="date" name="lastinstalment" placeholder="23/01/2013" value="23/01/2013" required style="margin-left: 25px;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="rate">rate TAC(%) *</label>
+								<input type="Number" name="rate" required placeholder="3,00" style="margin-left: 88px;">
+							</td>
+							<td>
+								<label for="interestmonthly">Interest per month(%) *</label>
+								<input type="Number" name="interest" required placeholder="4,00">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="interestannum">Interest per annum(%) *</label>
+								<input type="Number" name="interestannum" required placeholder="2,00" style="margin-left: 28px;">
+							</td>
+							<td>
+								<label for="iofvalue">IOF value(%)</label>
+								<input type="Number" name="iofvalue" style="margin-left: 68px;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="housingvalue">Housing value(%)</label>
+								<input type="Number" name="housingvalue" required style="margin-left: 63px;">
+							</td>
+							<td>
+								<label for="commissionvalue">Commission value(%) </label>
+								<input type="Number" name="commissionvalue" style="margin-left: 13px;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="consortiumshare">Share of the consortium(%)</label>
+								<input type="Number" name="consortumshare" required>
+							</td>
+							<td>
+								<label for="consortiumgrp">Consortium group </label>
+								<input type="text" name="consortiumgrp" style="margin-left: 38px;">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<label for="feedescription">description of fee</label>
+								<input type="text" name="feedescription" style="margin-left: 68px; width: 60%;">
+							</td>
+						</tr>
+					</table>
+				</section>
+
+				<section class="Sec5">
+					<table id="T5">
+						<caption><span style="color: blue;">Anexos contrato</span></caption>
+						<tr>
+							<td>
+								<label for="contractfile">contract *</label><input type="text" name="contractfile" required style="margin-left: 92px;">
+								<input type="button" name="file" value="File">
+								<input type="button" name="scan" value="Scan">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="cpf">CPF</label><input type="text" name="cpf" style="margin-left: 127px;">
+								<input type="button" name="file" value="File">
+								<input type="button" name="scan" value="Scan">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="rg">RG</label><input type="text" name="rg" style="margin-left: 135px;">
+								<input type="button" name="file" value="File">
+								<input type="button" name="scan" value="Scan">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="proofaddress">Proof of address</label><input type="text" name="proofaddress" style="margin-left: 55px;">
+								<input type="button" name="file" value="File">
+								<input type="button" name="scan" value="Scan" style="padding: 4px 15px">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="certificatesignature">Sign with the certificate</label>
+								<select name="clients">
+									<option name="client1" value="client1">
+										CLIENTE 1
+									</option>
+								</select>
+								<input type="button" name="update" value="Update" style="margin-left: 80px;">
+							</td>
+						</tr>
+					</table>
+				</section>
+				<table id="T6">
+					<tr>
+						<td>
+							<input type="button" name="new" value="New">
+							<input type="submit" name="save" value="Save">
+							<input type="reset" name="cancel" value="Cancel">
+							<input type="button" name="end" value="End">
+						</td>
+						
+					</tr>
+				</table>
+			</form>
+		
+	
+</body>
+</html>
