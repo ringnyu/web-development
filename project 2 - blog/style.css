@@ -58,7 +58,7 @@ li {
 	padding: 0 10px 10px 80px;
 
 }
-.tipsandTricks , li{
+.tipsandTricks > li{
 	display: list-item;
 	list-style-type: square;
 	color:  #D46A6A;

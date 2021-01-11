@@ -7,8 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header id="header-background">
-	</header>
+	<header id="header-background"></header>
 
 	<nav>
 			<ul>
@@ -37,7 +36,7 @@
 			<br>That is the same scenario when a browser comes in contact with a document without a DOCTYPE. We all can agree that the results of such a document won't be as good as we expected.<br>
 			So, to avoid making such mistakes consider the points below;
 
-			<ul>
+			<ul class="tipsandTricks">
 				<li>Use DOCTYPE, irrespective of the kind of HTML you use in your code</li>
 				<li>Always place DOCTYPE in the first line of your source code</li>
 				<li>Take note, DOCTYPE is case-sensitive</li>
@@ -49,7 +48,7 @@
 			</h2>
 			Before we get into this, it will be of great importance we understand that, <strong>each HTML element is either displayed in Block or Inline</strong>. <br>
 			Block elements are <em> elements that always start on a new line and takes up the full width availableon the web page, effectively blocking out any other element from being close to it</em> <br>
-			Inline elements are <em> elements that don't start in a new line and only take up width as necessary. </em> <br>
+			Inline elements are <em> elements that don't start in a new line and only take up width as necessary, thereby allowing other elements to be in line with the inline element. </em> <br>
 			With that said, a block element should never &#10060; be placed in an inline element. Let's take an example:
 			<blockquote>Give the link of elements in the navigation heading 2</blockquote>
 			<span>&#10060;</span> <br>
@@ -59,7 +58,7 @@
 			<figure> <img src="images/Block-in-INline-elt.png"> <figcaption> Inline element a in Block element h2 </figcaption></figure>
 
 			<span>&#128161;</span> If at one point in time you aren't sure if an element is block or inline, tryout this little trick. <br>
-			<ul>
+			<ul class="tipsandTricks">
 				<li> open up your text editor, set it to html and write out the html element, give it a background color and see how it behaves. Check out for these;</li>
 
 				<li>
@@ -72,6 +71,21 @@
 
 			It is worth noting that, block elements e.g paragraph, section, divs, aside etc make up the structure of your web page and inline elements e.g span, anchor(a) etc belong in the block elements <a href="https://www.w3schools.com/htmL/html_blocks.asp"> Click here for more examples on inline and block elements</a>
 			
+			<h2>
+					3. Weak CSS structuring 
+			</h2>
+			Most at times, many newbie developers  focus on content and website visual elements instead of focusing on organising CSS styles in a logical manner. Beginners usually write CSS in the order they think, as a result a style declaration can't be found when it is time to do changes.<br>
+			<span>&#128161;</span> Always organise your CSS code by structuring the CSS according to the organisation of HTML you are working on. For example; <br>
+			<blockquote>
+				<ul class="tipsandTricks">
+					<li>header,</li>
+					<li>body,</li>
+					<li>article,</li>
+					<li>section,</li>
+					<li>sidebar,</li>
+					<li>and footer</li>
+				</ul>
+			</blockquote>
 		</p>
 		</article>
 
