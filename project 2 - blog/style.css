@@ -1,37 +1,66 @@
 
 body{
-	font-family: 'Brush Script MT', cursive;
+	font-family: 'Muli', sans-serif;
+	/*font-family: 'Brush Script MT', cursive;*/
 	font-size: 20px;
+
 }
 
-header {
-	background-image: url("images/computer-code-plant.jpg");
-	height: 30%;
+#header-background {
 	width: 100%;
-	background-color: rgba(0,255,255,0.5); /*used if the image is unavailable */
-	background-repeat: no-repeat; /* Do not repeat the image */
+	height: 300px;
+	background-image: url("images/computer-code-plant.jpg");
 	background-size: cover; /* Resize the background image to cover the entire container */
+	background-repeat: no-repeat;
 	background-position: right;
-	position: fixed;
+}
 
-	}
+nav {
+	background-color: #000;
+	margin-top: -320px;
+
+}
 
 nav >ul > li> a {
 	text-decoration: none;
 	margin: 10px;
+	color: #fff;
 	
 }
 li {
 	display: inline-flex;
-	background-color: #fff;
+	color: #fff;
 	list-style-type: none;
 }
 
-h1 {
-	font-size: 3em;
+.container > article > h1 , aside > h2 {
+	font-size: 2em;
+	text-transform: uppercase;
+	text-align: center;
+	border-top: 10px solid #801515;
+	border-bottom: 10px solid #801515;
+	color: #D46A6A;
 }
 
-section , footer {
-	padding: 200px;
+.container {
+	display: flex;
+	margin-top: 300px;
+	padding: 5px;
+	text-align: justify;
+}
+.container > article, aside {
+	padding:0 10px 10px 30px;: 
 }
 
+.container > aside {
+	padding: 0 10px 10px 80px;
+
+}
+
+footer {
+	background-color: #000;
+	color: #fff
+}
+footer > p{
+	text-align: center;
+}
