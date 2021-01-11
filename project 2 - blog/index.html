@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+
+<!DOCTYPE html> <!--Doctype helps the browser identify the kind of document, the browser should expect -->
+
 <html>
 <head>
 	<title>My first Blog</title>
@@ -20,22 +22,56 @@
 		<article>
 			<h1>10 common html mistakes made by beginners </h1>
 			<figure>
-				<img src="images/oops-Error-Keyboard.jpg" alt="Oops Keyboard" style="width: 100%">	
-				<figcaption>Errors we make</figcaption>
+				<img src="images/oops-Error-Keyboard.jpg" alt="Oops Keyboard">	
 			</figure>
-			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<p> As a beginner in web development, it is often very exciting writing html elements that make things happen just as you want it to happen without much stress But there are times it can become very frustrating, when you try out a punch of tags, elements and nothing happens the way you want it to be.
+			<strong>Especially when you know you have done everything right</strong>.<br>
 
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Now, let's jump into what some of the mistakes, one makes especially as a newbie. Beginning with the most serious mistake <br>
+			</p>
+
+			<h3>1. Forgetting the DOCTYPE</h3>
+			<p>
+				<figure> <img src="images/doctype-declaration.png"></figure>
+			DOCTYPE shows browsers the version of HTML you are using. In the absence of DOCTYPE, the browser makes assumptions on the kind of code used. <br>Just imagine a toodler, seeing white paint in a container and thinking it is yogurt &#128556; not good, right??? Unless you label the container as paint, the toodler will make assumptions. 
+			<br>That is the same scenario when a browser comes in contact with a document without a DOCTYPE. We all can agree that the results of such a document won't be as good as we expected.<br>
+			So, to avoid making such mistakes consider the points below;
+
+			<ul>
+				<li>Use DOCTYPE, irrespective of the kind of HTML you use in your code</li>
+				<li>Always place DOCTYPE in the first line of your source code</li>
+				<li>Take note, DOCTYPE is case-sensitive</li>
+
+
+			</ul>
+			<h3>
+					2. Wrong placement of Block Elements 
+			</h3>
+			Before we get into this, it will be of great importance we understand that, <strong>each HTML element is either displayed in Block or Inline</strong>. <br>
+			Block elements are <em> elements that always start on a new line and takes up the full width availableon the web page, effectively blocking out any other element from being close to it</em> <br>
+			Inline elements are <em> elements that don't start in a new line and only take up width as necessary. </em> <br>
+			With that said, a block element should never &#10060; be placed in an inline element. Let's take an example:
+			<blockquote>Give the link of elements in the navigation heading 2</blockquote>
+			<span>&#10060;</span> <br>
+			<figure> <img src="images/Block-in-INline-elt.png"> <figcaption> Block element h2 in Inline element a </figcaption></figure>
+
+			<span>&#9989;</span>
+			<figure> <img src="images/Block-in-INline-elt.png"> <figcaption> Inline element a in Block element h2 </figcaption></figure>
+
+			<span>&#128161;</span> If at one point in time you aren't sure if an element is block or inline, tryout this little trick. <br>
+			<ul>
+				<li> open up your text editor, set it to html and write out the html element, give it a background color and see how it behaves. Check out for these;</li>
+
+				<li>
+				Does it start in a new line? <br>
+				Does it occupy the whole width or just the necessary??
+				</li>
+
+				<li>if it occupies the whole width despite the length of it's content, then it is a block element. Otherwise, it is an inline element</li>
+			</ul>
+
+			It is worth noting that, block elements e.g paragraph, section, divs, aside etc make up the structure of your web page and inline elements e.g span, anchor(a) etc belong in the block elements <a href="https://www.w3schools.com/htmL/html_blocks.asp"> Click here for more examples on inline and block elements</a>
+			
 		</p>
 		</article>
 
@@ -52,6 +88,7 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
+
 		</aside>
 
 	</div>
