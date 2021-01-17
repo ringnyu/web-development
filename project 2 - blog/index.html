@@ -31,7 +31,7 @@
 
 			<h2>1. Forgetting the DOCTYPE</h2>
 			<p>
-				<figure> <img src="images/doctype-declaration.png"></figure>
+				<figure> <img src="images/doctype-declaration.png" alt="Forgetting the doctype-declaration"></figure>
 			DOCTYPE shows browsers the version of HTML you are using. In the absence of DOCTYPE, the browser makes assumptions on the kind of code used. <br>Just imagine a toodler, seeing white paint in a container and thinking it is yogurt &#128556; not good, right??? Unless you label the container as paint, the toodler will make assumptions. 
 			<br>That is the same scenario when a browser comes in contact with a document without a DOCTYPE. We all can agree that the results of such a document won't be as good as we expected.<br>
 			So, to avoid making such mistakes consider the points below;
@@ -52,10 +52,10 @@
 			With that said, a block element should never &#10060; be placed in an inline element. Let's take an example:
 			<blockquote>Give the link of elements in the navigation heading 2</blockquote>
 			<span>&#10060;</span> <br>
-			<figure> <img src="images/Block-in-INline-elt.png"> <figcaption> Block element h2 in Inline element a </figcaption></figure>
+			<figure> <img src="images/Block-in-INline-elt.png" alt="Block element inside Inline element"> <figcaption> Block element h2 in Inline element a </figcaption></figure>
 
 			<span>&#9989;</span>
-			<figure> <img src="images/Block-in-INline-elt.png"> <figcaption> Inline element a in Block element h2 </figcaption></figure>
+			<figure> <img src="images/Block-in-INline-elt.png" alt="Inline element inside Block element"> <figcaption> Inline element a in Block element h2 </figcaption></figure>
 
 			<span>&#128161;</span> If at one point in time you aren't sure if an element is block or inline, tryout this little trick. <br>
 			<ul class="tipsandTricks">
@@ -86,13 +86,29 @@
 					<li>and footer</li>
 				</ul>
 			</blockquote>
+
+			<h2>
+					4. Not using 'alt' attribute in the img tag
+			</h2>
+			<p>
+				Including the alt attribute in an image (img) tag is of <mark>vital importance</mark>. You should be wondering why the highlight on it's importance. Okay, let me tell you why. Before we get to that, let's refresh our minds on what the role of 'alt' attribute actually is. The ALT attribute enables you as the developer to provide alternative information for an image in case a user's device can't load the image properly maybe due to poor internet connection or an error in the 'src' attribute or if the user uses a screen reader
+				<ul class="tipsandTricks">
+					<li></li>
+				</ul>
+			</p>
+			
 		</p>
 		</article>
+
+
+
+
+
 
 		<aside>
 			<h2>Most required skills for advanced html developers</h2>
 			<figure>
-				<img src="images/skills-for-developers.png" alt="Developer skills" style="width: 100%">	
+				<img src="images/skills-for-developers.png" alt="advanced Developer skills" style="width: 100%">	
 			</figure>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

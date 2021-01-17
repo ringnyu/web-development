@@ -35,21 +35,13 @@ li {
 	list-style-type: none;
 }
 
-.container > article > h1 , aside > h2 {
-	font-size: 2em;
-	text-transform: capitalize;
-	text-align: center;
-	border-top: 10px solid #801515;
-	border-bottom: 10px solid #801515;
-	color: #D46A6A;
-}
-
 .container {
 	display: flex;
 	margin-top: 300px;
 	padding: 5px;
 	text-align: justify;
 }
+
 .container > article, aside {
 	padding:0 10px 10px 30px;: 
 }
@@ -58,6 +50,27 @@ li {
 	padding: 0 10px 10px 80px;
 
 }
+
+.container > article > h1 , aside > h2 {
+	font-size: 2em;
+	text-transform: capitalize;
+	text-align: center;
+	color: #D46A6A;
+}
+
+.container > article > h1 {
+	border-top: 10px solid #801515;
+	border-bottom: 10px solid #801515;
+}
+
+.container > aside > h2 {
+	border-top: 10px solid #801515;
+}
+
+
+
+
+
 .tipsandTricks > li{
 	display: list-item;
 	list-style-type: square;
