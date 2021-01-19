@@ -1,13 +1,16 @@
 
 body{
 	font-family: 'Muli', sans-serif;
-	/*font-family: 'Brush Script MT', cursive;*/
 	font-size: 16px;
 	line-height: 1.5;
 	background-color: #f9f9f9;
 
 }
-
+.sticky-header{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
 #header-background {
 	width: 100%;
 	height: 300px;
@@ -66,10 +69,6 @@ li {
 .container > aside > h2 {
 	border-top: 10px solid #801515;
 }
-
-
-
-
 
 .tipsandTricks > li{
 	display: list-item;

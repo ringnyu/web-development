@@ -7,14 +7,16 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header id="header-background"></header>
-
-	<nav>
-			<ul>
-				<li><a href="index.html">HOME </a></li>
-				<li><a href="index.html">BLOG </a></li>
-			</ul>
-	</nav>
+	
+		<header id="header-background"></header>
+		<div class="sticky-header">
+			<nav>
+					<ul>
+						<li><a href="index.html">HOME </a></li>
+						<li><a href="index.html">BLOG </a></li>
+					</ul>
+			</nav>
+		</div>
 
 	<div class="container">
 		
@@ -93,10 +95,33 @@
 			<p>
 				Including the alt attribute in an image (img) tag is of <mark>vital importance</mark>. You should be wondering why the highlight on it's importance. Okay, let me tell you why. Before we get to that, let's refresh our minds on what the role of 'alt' attribute actually is. The ALT attribute enables you as the developer to provide alternative information for an image in case a user's device can't load the image properly maybe due to poor internet connection or an error in the 'src' attribute or if the user uses a screen reader
 				<ul class="tipsandTricks">
-					<li></li>
+					<li>The primary purpose of the ALT text is to describe images to visistors who are unable to see them. These include, screen readers and browsers that block images.</li>
+					<li>The content of ALT attribute helps Search engines to understand what an image is all about</li>
 				</ul>
 			</p>
+
+			<h2>
+					4. Confusing use of Classes and IDs
+			</h2>
+			<p>
+				Classes are for items that are used more than once on one page. This can be a link style that you’ll call in multiple times on one page but doesn’t follow the global link styling. 
+			</p>
+			<p>Ids are items that are called just once, like the header div.<p>
 			
+			<h2>
+					5. Not using unique names for Ids and classes
+			</h2>
+			<p>
+				Choosing names that are unique is of great importance when it comes to Ids and Classes. Using unique names makes it easy to edit later and also easy to identify in the stylesheet. For example, naming a div as <strong>#home-right-column is better than just #right</strong>
+			</p>
+
+
+			<h2>
+					6. Incorrect use positioning
+			</h2>
+			<p>
+				When first starting out with CSS, positioning is tough to understand. There are five types of positioning values:<strong>static,relative,fixed, absolute and sticky </strong>
+			</p>
 		</p>
 		</article>
 
