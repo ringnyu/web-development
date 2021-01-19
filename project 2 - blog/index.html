@@ -1,8 +1,8 @@
 
 <!DOCTYPE html> <!--Doctype helps the browser identify the kind of document, the browser should expect -->
-
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>My first Blog</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -25,10 +25,9 @@
 			<figure>
 				<img src="images/oops-Error-Keyboard.jpg" alt="Oops Keyboard">	
 			</figure>
-			<p> As a beginner in web development, it is often very exciting writing html elements that make things happen just as you want it to happen without much stress But there are times it can become very frustrating, when you try out a punch of tags, elements and nothing happens the way you want it to be.
-			<strong>Especially when you know you have done everything right</strong>.<br>
+			<p> As a beginner in web development, it is often very exciting writing html elements that make things happen just as you want it to happen without much stress But there are times it can become very frustrating, when you try out a punch of tags, elements and nothing happens the way you want it to be.<strong>Especially when you know you have done everything right</strong>.<br>
 
-			Now, let's jump into what some of the mistakes, one makes especially as a newbie. Beginning with the most serious mistake <br>
+			Now, let's jump into what some of the mistakes, one makes especially as a newbie. 
 			</p>
 
 			<h2>1. Forgetting the DOCTYPE</h2>
@@ -45,8 +44,27 @@
 
 
 			</ul>
+
 			<h2>
-					2. Wrong placement of Block Elements 
+					2. Neglecting Character Encoding
+			</h2>
+			<p>
+				Character sets simply tell the web browser the kind of characters used in the page. The character encoding tells the browser what kind of data to read and display. Let's take an example; A page containing the English characters found on our keyboards will have a different character set from the one that displays Japanese or Chinise characters. This is where character encoding comes into play. It’s important to specify a character set of the document as earlier as possible  otherwise the browser will be left to determine the encoding before parsing the document and this may negatively affect the page load time.  For most English Web pages, the character encoding will be entered into the Web page like this: <code>&lt;meta charset="utf-8"&gt;</code>.This meta tag should be within the  <code>&lt;head&gt; and &lt;/head&gt; </code>tags of your Web page and is not case sensitive.
+
+				<code>
+					
+				</code>
+			</p>
+
+
+			<h2>
+					3. Styling content before choosing default fonts and colors
+			</h2>
+			<p>
+				
+			</p>
+			<h2>
+					4. Wrong placement of Block Elements 
 			</h2>
 			Before we get into this, it will be of great importance we understand that, <strong>each HTML element is either displayed in Block or Inline</strong>. <br>
 			Block elements are <em> elements that always start on a new line and takes up the full width availableon the web page, effectively blocking out any other element from being close to it</em> <br>
@@ -74,7 +92,7 @@
 			It is worth noting that, block elements e.g paragraph, section, divs, aside etc make up the structure of your web page and inline elements e.g span, anchor(a) etc belong in the block elements <a href="https://www.w3schools.com/htmL/html_blocks.asp"> Click here for more examples on inline and block elements</a>
 			
 			<h2>
-					3. Weak CSS structuring 
+					5. Weak CSS structuring 
 			</h2>
 			Most at times, many newbie developers  focus on content and website visual elements instead of focusing on organising CSS styles in a logical manner. Beginners usually write CSS in the order they think, as a result a style declaration can't be found when it is time to do changes.<br>
 			<span>&#128161;</span> Always organise your CSS code by structuring the CSS according to the organisation of HTML you are working on. For example; <br>
@@ -90,7 +108,7 @@
 			</blockquote>
 
 			<h2>
-					4. Not using 'alt' attribute in the img tag
+					6. Not using 'alt' attribute in the img tag
 			</h2>
 			<p>
 				Including the alt attribute in an image (img) tag is of <mark>vital importance</mark>. You should be wondering why the highlight on it's importance. Okay, let me tell you why. Before we get to that, let's refresh our minds on what the role of 'alt' attribute actually is. The ALT attribute enables you as the developer to provide alternative information for an image in case a user's device can't load the image properly maybe due to poor internet connection or an error in the 'src' attribute or if the user uses a screen reader
@@ -101,7 +119,7 @@
 			</p>
 
 			<h2>
-					4. Confusing use of Classes and IDs
+					7. Confusing use of Classes and IDs
 			</h2>
 			<p>
 				Classes are for items that are used more than once on one page. This can be a link style that you’ll call in multiple times on one page but doesn’t follow the global link styling. 
@@ -109,7 +127,7 @@
 			<p>Ids are items that are called just once, like the header div.<p>
 			
 			<h2>
-					5. Not using unique names for Ids and classes
+					8. Not using unique names for Ids and classes
 			</h2>
 			<p>
 				Choosing names that are unique is of great importance when it comes to Ids and Classes. Using unique names makes it easy to edit later and also easy to identify in the stylesheet. For example, naming a div as <strong>#home-right-column is better than just #right</strong>
@@ -117,11 +135,19 @@
 
 
 			<h2>
-					6. Incorrect use positioning
+					9. Incorrect use of positioning
 			</h2>
 			<p>
 				When first starting out with CSS, positioning is tough to understand. There are five types of positioning values:<strong>static,relative,fixed, absolute and sticky </strong>
 			</p>
+
+			<h2>
+					10. Using Unsupported tags or attributes
+			</h2>
+			<p>
+				
+			</p>
+
 		</p>
 		</article>
 
