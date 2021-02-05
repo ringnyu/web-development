@@ -1,9 +1,10 @@
 
 <!DOCTYPE html> <!--Doctype helps the browser identify the kind of document, the browser should expect -->
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>My first Blog</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -49,11 +50,7 @@
 					2. Neglecting Character Encoding
 			</h2>
 			<p>
-				Character sets simply tell the web browser the kind of characters used in the page. The character encoding tells the browser what kind of data to read and display. Let's take an example; A page containing the English characters found on our keyboards will have a different character set from the one that displays Japanese or Chinise characters. This is where character encoding comes into play. It’s important to specify a character set of the document as earlier as possible  otherwise the browser will be left to determine the encoding before parsing the document and this may negatively affect the page load time.  For most English Web pages, the character encoding will be entered into the Web page like this: <code>&lt;meta charset="utf-8"&gt;</code>.This meta tag should be within the  <code>&lt;head&gt; and &lt;/head&gt; </code>tags of your Web page and is not case sensitive.
-
-				<code>
-					
-				</code>
+				Character sets simply tell the web browser the kind of characters used in the page. The character encoding tells the browser what kind of data to read and display. Let's take an example; A page containing the English characters found on our keyboards will have a different character set from the one that displays Japanese or Chinise characters. This is where character encoding comes into play. It’s important to specify a character set of the document as earlier as possible  otherwise the browser will be left to determine the encoding before parsing the document and this may negatively affect the page load time.  For most English Web pages, the character encoding will be entered into the Web page like this: <code>&lt;meta charset="utf-8"&gt;</code>.This meta tag should be within the  <code>&lt;head&gt; and &lt;/head&gt;</code> tags of your Web page and is not case sensitive.
 			</p>
 
 
@@ -61,7 +58,12 @@
 					3. Styling content before choosing default fonts and colors
 			</h2>
 			<p>
-				
+				It is good practice to always choose the typography that will go with your content before you style the content. Even before adding new content, take out time to also set up default colours. Below are are few recommendations;
+				<ol class="tipsandTricks">
+					<li>Default font size should be between 16px and 20px,</li>
+					<li>1.5 - 1.85 is highly recommended for line-height,</li>
+					<li>Use slightly-off-white colours, like #f9f9f9 to turn down the contrast of the page background. Just like the case of this site</li>
+				</ol>
 			</p>
 			<h2>
 					4. Wrong placement of Block Elements 
@@ -92,7 +94,7 @@
 			It is worth noting that, block elements e.g paragraph, section, divs, aside etc make up the structure of your web page and inline elements e.g span, anchor(a) etc belong in the block elements <a href="https://www.w3schools.com/htmL/html_blocks.asp"> Click here for more examples on inline and block elements</a>
 			
 			<h2>
-					5. Weak CSS structuring 
+					5. Weak CSS structuring and use of inline CSS 
 			</h2>
 			Most at times, many newbie developers  focus on content and website visual elements instead of focusing on organising CSS styles in a logical manner. Beginners usually write CSS in the order they think, as a result a style declaration can't be found when it is time to do changes.<br>
 			<span>&#128161;</span> Always organise your CSS code by structuring the CSS according to the organisation of HTML you are working on. For example; <br>
@@ -106,6 +108,9 @@
 					<li>and footer</li>
 				</ul>
 			</blockquote>
+			<p>
+				It is considered bad practice to do inline styling, not for the reason that the styles won't work it will work quite alright but will result to a lot of headaches later on. As you grow as a developer, you will quickly notice that it is easier to edit and add styles later on when you style globally via external stylesheets. This will also reduce the risk of mistakes and will cut down on the aount of code in your stylesheets.
+			</p>
 
 			<h2>
 					6. Not using 'alt' attribute in the img tag
@@ -145,9 +150,22 @@
 					10. Using Unsupported tags or attributes
 			</h2>
 			<p>
-				
+				There are some tags and  attributes that have become obsolette. Tags such <code>&lt;blink&gt;,&lt;marquee&gt;,&lt;dir&gt;,&lt;font&gt;</code> and some html attributes such as <mark>background, bgcolor, align </mark> and many more are deprecated. Check the <a href="https://www.tutorialspoint.com/html/html_deprecated_tags.htm">HERE</a> for a full list.
 			</p>
 
+
+			<h2>
+					Additional HTML and CSS recommendations for beginners
+			</h2>
+			<p>
+				<ol class="tipsandTricks">
+					<li>Don't use multiple breaks to show a list, infact <strong>never</strong> use multiple line breaks</li>
+					<li>Don't forget to encode special characters such as the e in the word Caf&eacute;</li>
+					<li>Use shorthand code to condense your stylesheet, this will help speed up user load times. For example; Instead of using margin-top, margin-left, margin-bottom and margin-right. You can simply use <strong>margin: 10px 15px 0 15px</strong>. Also HEx numbers that repeat like #ffffff and #000000 can be condensed to #fff and #000 </li>
+					<li>Don't capitalize tags it is considered as bad practice. Though capitalizing the tags won't change the results of you code, it is advisable to always use lowercase, it is good practice to do so.</li>
+					<li>Always close your tags</li>
+				</ol>
+			</p>
 		</p>
 		</article>
 

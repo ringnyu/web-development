@@ -1,0 +1,29 @@
+
+
+.my-work{
+	display:none;
+}
+.header-title{
+	margin-bottom:8px;
+	text-transform:capitalize;
+	letter-spacing:.02em;
+	font-size:17px;
+	font-weight:600;
+	margin-top:0;
+	color:#1a253f;
+	text-shadow:0 0 1px rgba(239,242,249,.1)
+}
+.header-title:after{
+	content:'';
+	height:3px;
+	width:80px;
+	position:absolute;
+	top:32px;
+	left:16px;
+	border:1px dotted #f1646c;
+	border-radius:63px
+}
+.col-print-6{
+	width:50%;
+	float:left
+}

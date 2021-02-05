@@ -1,0 +1,100 @@
+body{
+	margin: auto 0;
+	font-size: 20px;
+	background-color: #eaf0f7;
+    font-family: "IBM Plex Sans",sans-serif;
+    line-height: 1.5;
+}
+/*for small devices, take give the navbar no padding and reduce the fontsize*/
+@media only screen and (max-width: 400px){
+    .navbar{
+        padding: 0;
+        font-size: 0.5em;
+    }
+    .left-side-profile{
+    	padding: 0;
+    	width: 100%;
+
+    }
+    .right-side-content{
+    	margin:0;
+    	width: 100%;
+    }
+
+}
+
+/*navigation*/
+.navbar{
+	display: flex;
+	background-color: #111;
+}
+
+li {
+	display: inline;
+	list-style: none;
+    padding: 10px;
+    align-items:  center;
+}
+
+.menu-list {
+	margin-left: auto;
+}
+
+ a {
+
+text-decoration: none;
+color: #fff;
+}
+.navbar-brand{
+	margin: 20px 40px;
+}
+
+/*Cover*/
+.cover {
+	background-color: red;
+	display: flex;
+
+}
+
+/*Site content*/
+.content-container{
+	display: grid;
+	grid-template-columns: 0.2fr 1fr;
+	
+	/*grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));*/
+	padding: 10px;
+
+	
+	
+}
+/*left profile*/
+
+.profile-main-pic > img {
+	border-radius: 50%;
+}
+.left-side-profile{
+	border-radius: 3px;
+	height: 450px;
+    background-color: #1a253f;
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+
+}
+
+/*right profile content*/
+.right-side-content{
+	padding: 10px;
+	background-color: #fff;
+	
+	
+	
+}
+
+/*footer*/
+footer {
+	text-align: center;
+	background-color: #111;
+	color: white;
+}

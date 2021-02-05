@@ -1,0 +1,151 @@
+
+#main-container{
+	margin-left: 30%;
+
+}
+h1 {
+	color: grey;
+}
+.container1 > button, .container2 > button, .container3 > button{
+	outline: none;
+	margin: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+.container1 > button {
+	border-radius: 26px;
+	/*border-color: grey;*/
+}
+
+.container1 > button > span{
+	font-size: 14px;
+}
+
+.btn1-1{
+	background-color: white;
+	color: gray;
+	border-color: grey;
+}
+
+.btn1-2, .btn1-3, .btn1-4 {
+	color: white;
+}
+
+.btn1-2{
+	background-color: blue;
+	border-color: blue;
+}
+
+.btn1-3{
+	background-color: green;
+	border-color: green;
+}
+
+.btn1-4{
+	background-color: #000;
+	border-color: #000;
+}
+
+/*second container of buttons*/
+.container2 > button {
+	border-radius: 8px;
+	padding: 10px;
+	background-color: #fff;
+}
+.btn2-1{
+	border-color: grey;
+}
+.btn2-1 > span {
+	color: grey;
+}
+.btn2-2 > span {
+	color: blue;
+}
+
+.btn2-2{
+	border-color: blue;
+}
+.btn2-2 > span {
+	color: blue;
+}
+.btn2-3{
+	border-color: orange;
+}
+.btn2-3 > span {
+	color: orange;
+}
+.btn2-4{
+	border-color: green;
+}
+.btn2-2 > span {
+	color: green;
+}
+
+/*Third container of buttons*/
+.container3 > button{
+	border-radius: 8px;
+	padding: 10px;
+}
+.container3 > button > span {
+	color: white;
+}
+#btn3-1{
+	border-color: grey;
+	background-color: #fff;
+}
+#btn3-1 > span {
+	color: grey;
+}
+.btn3-2{
+	border-color: blue;
+	background-color: blue;
+	color: #fff;
+}
+.btn3-3{
+	border-color: orange;
+	background-color: orange;
+}
+.btn3-4{
+	border-color: green;
+	background-color: green;
+}
+
+/* general design for the Fourth,fifth,sixth and seventh containers*/
+.container4 > button, .container5 > button, .container6 > button, .container7 > button {
+	text-align: center;
+	padding: 10px;
+	width: 30%;
+	margin: 20px;
+	border-radius: 8px;
+	background-color: white;
+	outline: none;
+	font-size: 20px;
+	border-color: grey;
+	box-shadow: none;
+}
+
+.container4 > button, .container5 > button{
+	background-color: white;
+}
+
+.container4 > button > strong > span {
+	font-size: 21px;
+	padding-right: 50px;
+} 
+
+.container5 > button > strong > span {
+	font-size: 21px;
+	padding-left: 50px;
+}
+
+.container6 > button, .container7 > button{
+	color: white;
+}
+.container6 > button{
+	background-color: green;
+}
+.container7 > button{
+	background-color: blue;
+}
+  

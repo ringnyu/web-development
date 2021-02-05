@@ -21,7 +21,7 @@ body{
 }
 
 nav {
-	background-color: #000;
+	background-color: #D46A6A;
 	margin-top: -320px;
 
 }
@@ -36,6 +36,11 @@ li {
 	display: inline-flex;
 	color: #fff;
 	list-style-type: none;
+}
+code {
+	background: #343D46;
+	padding: 5px;
+	color: #fff;
 }
 
 .container {
